@@ -13,7 +13,10 @@ then, only during a graphical run.
   Option key should be:
 
   #+BEGIN_SRC elisp
-    (setq mac-option-modifier 'meta)
+    (setq mac-command-modifier 'control) ; make cmd key do Meta
+    (setq mac-option-modifier 'meta) ; make opt key do Super
+    (setq mac-control-modifier 'super) ; make Control key do Control
+    (setq ns-function-modifier 'hyper)  ; make Fn key do Hyper
   #+END_SRC
 
   However, I like the ability to use the Command key to turn a

@@ -26,8 +26,9 @@
 (require 'ob-tangle)   ;; org-mode tangling process
 
 ;; My special functions for doing script are not in a loadable location.q
-(defvar script-funcs-src (concat (file-name-directory (buffer-file-name))
-                                 "elisp/shell-script-funcs.el"))
+;;(defvar script-funcs-src (concat (file-name-directory (buffer-file-name))
+;;                                 "elisp/shell-script-funcs.el"))
+(defvar script-funcs-src "/Users/remy/dot-files/elisp/shell-script-funcs.el")
 (require 'shell-script-funcs script-funcs-src)
 
 ;; Need to get the directory to my 'dot-files' source code. While
